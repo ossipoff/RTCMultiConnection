@@ -256,7 +256,7 @@ if (isUseHTTPs) {
 
     if (pfx === true) {
         options = {
-            pfx: sslKey
+            pfx: config.sslKey
         };
     }
 
