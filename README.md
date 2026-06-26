@@ -2,7 +2,7 @@
 
 # RTCMultiConnection - WebRTC JavaScript Library
 
-[![npm](https://img.shields.io/npm/v/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![downloads](https://img.shields.io/npm/dm/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![Build Status: Linux](https://travis-ci.org/muaz-khan/RTCMultiConnection.png?branch=master)](https://travis-ci.org/muaz-khan/RTCMultiConnection)
+[![npm](https://img.shields.io/npm/v/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![downloads](https://img.shields.io/npm/dm/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![npm-audit](https://img.shields.io/badge/npm--audit-0%20vulnerabilities-brightgreen)](https://github.com/ossipoff/RTCMultiConnection/security/code-scanning?query=is%3Aopen+sort%3Aupdated-desc)
 
 > RTCMultiConnection is a WebRTC JavaScript library for peer-to-peer applications (screen sharing, audio/video conferencing, file sharing, media streaming etc.)
 
@@ -58,9 +58,17 @@ node server --port=9001
 
 ## Want to Contribute?
 
-RTCMultiConnection is using `Grunt` to compile javascript into `dist` directory:
+RTCMultiConnection uses `esbuild` to bundle JavaScript from `dev/` into `dist/`:
 
-* https://github.com/muaz-khan/RTCMultiConnection/blob/master/CONTRIBUTING.md
+```sh
+npm install
+npm run build          # Build bundles
+npm run build:watch    # Auto-rebuild on dev/*.js changes
+npm test               # Run tests
+npm lint               # Lint check (warnings only, no errors)
+```
+
+See [CONTRIBUTING.md](https://github.com/muaz-khan/RTCMultiConnection/blob/master/CONTRIBUTING.md) for full instructions.
 
 ## Wiki Pages
 
